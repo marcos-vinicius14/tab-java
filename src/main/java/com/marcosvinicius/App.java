@@ -16,7 +16,7 @@ import java.util.concurrent.Executors;
  */
 public class App 
 {
-     static void main( String[] args ) throws Exception
+     public static void main( String[] args ) throws Exception
     {
         int port = Integer.parseInt(System.getenv().getOrDefault("PORT", "8080"));
         HttpServer server = HttpServer.create(new InetSocketAddress(port), 0);
